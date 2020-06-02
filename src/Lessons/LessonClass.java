@@ -1,13 +1,7 @@
 package Lessons;
 
-import Student.StudentClass;
 
-import java.util.ArrayList;
-import java.util.LinkedHashMap;
-import java.util.Random;
-import java.util.Scanner;
-
-public abstract class LessonClass {
+public class LessonClass {
 
     /*
         LessonClass class is abstract class
@@ -19,9 +13,6 @@ public abstract class LessonClass {
         one private Student class object.
 
      */
-    private static int totalCreditCount;
-    private LinkedHashMap<String , Integer> classNameAndScore = new LinkedHashMap<>();
-    private StudentClass studentClass;
 
     /*
         Create a method name is topics
@@ -31,7 +22,6 @@ public abstract class LessonClass {
         Return type is String ArrayList
 
      */
-    public abstract ArrayList<String> topics();
 
     /*
     Create a constructor for the StudentClass
@@ -40,10 +30,7 @@ public abstract class LessonClass {
 
     call the setCreditCount method
      */
-    public LessonClass(StudentClass studentClass){
-        this.studentClass = studentClass;
-        setCreditCount();
-    }
+
 
     /*
 
@@ -62,28 +49,6 @@ public abstract class LessonClass {
 
 
      */
-    public void setCreditCount() {
-
-        Scanner dp = new Scanner(System.in);
-
-        ArrayList<String> lessonsName = new ArrayList<>();
-
-        int i =0;
-        while(totalCreditCount<=7){
-            System.out.println("Which class you would like to take your options are here : Math , Science , Biology , Chemistry , Music");
-            System.out.println("your total credit is " + totalCreditCount);
-            String className =dp.nextLine();
-
-            if(lessonsName.contains(className)) {
-                System.out.println("You already took this class please choose other class");
-            }else{
-                lessonsName.add(className);
-                totalCreditCount += checkCredit(lessonsName.get(i));
-                i++;
-
-            }
-        }
-    }
 
     /*
     Create a method name is checkCredit
@@ -111,29 +76,7 @@ public abstract class LessonClass {
      put lessonName as a key in the classNameAndScore
      value should take from the next method
      */
-    public int checkCredit(String lessonName){
 
-        int result =  0 ;
-
-        if(lessonName.equals("Math")){
-            result = 3;
-        }else if(lessonName.equals("Science")){
-            result = 4;
-        }else if(lessonName.equals("Biology")){
-            result = 2;
-        }else if(lessonName.equals("Chemistry")){
-            result = 2;
-        }else if(lessonName.equals("Music")){
-            result = 3;
-        }else{
-            throw new RuntimeException("You class name is not a valid class name.");
-        }
-
-        classNameAndScore.put(lessonName , RandomNum());
-
-        return result;
-
-    }
 
     /*
     Create a method name is RandomNum
@@ -142,17 +85,10 @@ public abstract class LessonClass {
 
     create an int number between 0 to 100
      */
-    private int RandomNum(){
 
-        Random rnd = new Random();
-
-        return rnd.nextInt(100);
-    }
 
     /*
     Create a get method for the ClassNameAndScore
      */
-    public LinkedHashMap<String, Integer> getClassNameAndScore() {
-        return classNameAndScore;
-    }
+
 }

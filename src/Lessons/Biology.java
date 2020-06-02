@@ -1,13 +1,12 @@
 package Lessons;
 
-import Student.StudentClass;
 
-import java.util.ArrayList;
-
-public class Biology extends LessonClass{
+public class Biology  {
 
 
     /*
+    This class child of the LessonClass
+
     Create a private String Arraylist name is topicList
 
     Biology class is the child of the LessonClass
@@ -20,22 +19,6 @@ public class Biology extends LessonClass{
      Principles of Genetics
 
      */
-    private ArrayList<String> topicList = new ArrayList<>();
-
-    @Override
-    public ArrayList<String> topics() {
-        topicList.add("Ecology");
-        topicList.add("Opportunities in Biology");
-        topicList.add("Principles of Biology 1");
-        topicList.add("Principles of Biology 2");
-        topicList.add("Principles of Genetics");
-
-        return topicList;
-    }
-
-    public Biology(StudentClass studentClass) {
-        super(studentClass);
-    }
 
 
 }
