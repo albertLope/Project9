@@ -28,10 +28,11 @@ public class StudentClass {
     Parameter is String username and String  password
     no return type
 
-    Check is given username and password pair exist in the StudentData class
-    You will use AddUserNameAndPassword method to check it(create a new LinkedHashMap and make it equal to AddUserNameAndPassword)
+    Check if given username and password pair exist in the StudentData class
+    You will use AddUserNameAndPassword method to check it(create a new LinkedHashMap and make it equal to AddUserNameAndPassword from the StudentData class)
+    if the pair exists,  make instance variable username equal to parameter username, and make instance variable password equal to parameter password
 
-    if it is not exist then throw an RunTimeException which is "Not able to find a username and password. Please sign up to website"
+    if it doesn't not exist then throw an RunTimeException which is "Not able to find a username and password. Please sign up to website"
      */
 
 

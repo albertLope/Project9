@@ -64,13 +64,13 @@ public class SchoolLocation {
     Create a set method for the locationList
     no return type
     one parameter String SchoolLocation
-    Create an String ArrayList name is listOfLocations is equal to the get method for the locationList
+    Create an String ArrayList name is listOfLocations is equal to the get method of the locationList
 
     If the locationList contains SchoolLocation
     then instance variable location is equal to  SchoolLocation parameter
 
-     If the locationList NOT contains SchoolLocation parameter
-     then throw a RunTimeException "Location should be one of the following " +listOfLocations
+     If the locationList does NOT contains SchoolLocation parameter
+     then throw a RunTimeException ("Location should be one of the following " +listOfLocations)
      */
 
 

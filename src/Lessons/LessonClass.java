@@ -39,14 +39,14 @@ public class LessonClass {
     Create an arraylist name is lessonsName
 
     Ask to user "Which class you would like to take your options are here : Math , Science , Biology , Chemistry , Music"
-    Also  print the current totalCreditCount(this comes from the instance variable)
+    After asking also  print the current totalCreditCount(this comes from the instance variable)
 
 
     If the user took the class (you wrote in the console with the scanner class) is already exits in the arraylist and the user would like to take it again
 
     Then print "You already took this class please choose other class"
 
-    If the user didn't take that class before then add it to the arraylist, and add the credit of the class(which comes from the lessonsName list) to the
+    If the user didn't take that class before, then add it to the arraylist, and add the credit of the class(which comes from the lessonsName list) to the
     totalCreditCount(you need to use checkCredit method)
 
     NOTE: The user can add a class until totalCreditCount equals to 7 (it is better to use while loop)
