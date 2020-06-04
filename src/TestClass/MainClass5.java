@@ -57,7 +57,7 @@ public class MainClass5 {
         }
 
         /*
-        Run the main class
+        Run the MainClass5
         Enter: Math
         Enter: Biology
         Enter: Biology

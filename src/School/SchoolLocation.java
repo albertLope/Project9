@@ -2,10 +2,10 @@ package School;
 
 public class SchoolLocation {
 
-    /*
-    Create 3 instance variables
+      /*
+    Create 3 private instance variables
     String price and location
-    String ArrayList locationList
+    Static String ArrayList locationList
      */
 
 
@@ -46,10 +46,11 @@ public class SchoolLocation {
      */
 
 
-    /*
-    Create a static method name is addLocation
+      /*
+    Create a public static method name is addLocation
+        no return type
         add USA , England , France , Germany , Canada
-        to
+             to
         ArrayList locationList
      */
 
@@ -59,16 +60,17 @@ public class SchoolLocation {
      */
 
 
-    /*
+       /*
     Create a set method for the locationList
     no return type
-    one String parameter SchoolLocation
+    one parameter String SchoolLocation
+    Create an String ArrayList name is listOfLocations is equal to the get method for the locationList
 
     If the locationList contains SchoolLocation
-    then instance variable location is equal to  SchoolLocation
+    then instance variable location is equal to  SchoolLocation parameter
 
-     If the locationList NOT contains SchoolLocation
-     then throw error "Location should be one of the following " +listOfLocations
+     If the locationList NOT contains SchoolLocation parameter
+     then throw a RunTimeException "Location should be one of the following " +listOfLocations
      */
 
 

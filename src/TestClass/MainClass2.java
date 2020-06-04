@@ -19,7 +19,7 @@ public class MainClass2 {
 
 
         /*
-        Run the main class
+        Run the MainClass2
         Then Type the class names
         Enter: Math
         Enter: Science

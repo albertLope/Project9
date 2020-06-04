@@ -3,10 +3,10 @@ package Student;
 
 public class StudentClass {
 
-    /*
-    This method child of the SchoolLocation
+  /*
+    This class is child of the SchoolLocation
 
-    Create 3 instance variable
+    Create 3 private instance variables
 
     String username and password
 
@@ -15,23 +15,23 @@ public class StudentClass {
      */
 
 
-    /*
+     /*
         Create an constructor
-        three parameter String username password and studentSchoolLocation
+        three parameter String username, String password and  String studentSchoolLocation
 
         Call the setUsernameAndPassword method in the constructor
 
      */
 
-
     /*
     Create a method name is  setUsernamePassword
-    Parameter is String username password
+    Parameter is String username and String  password
     no return type
 
-    Check is given username and password pair exist in the Student data class
+    Check is given username and password pair exist in the StudentData class
+    You will use AddUserNameAndPassword method to check it(create a new LinkedHashMap and make it equal to AddUserNameAndPassword)
 
-    if it is not exist then throw error which is "Not able to find a username and password. Please sign up to website"
+    if it is not exist then throw an RunTimeException which is "Not able to find a username and password. Please sign up to website"
      */
 
 
@@ -51,7 +51,7 @@ public class StudentClass {
           password
           Price
           schoolLocation
-          all class names and scores
+          ClassNameAndScore
      */
 
 

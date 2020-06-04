@@ -14,7 +14,7 @@ public class MainClass4 {
 
         /*
 
-        Run the main class
+        Run the MainClass4
 
         Result should be
          Exception in thread "main" java.lang.AssertionError: Not able to find a username and password. Please sign up to website

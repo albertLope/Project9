@@ -18,7 +18,7 @@ public class MainClass3 {
 
 
         /*
-        Run the main class
+        Run the MainClass3
         Enter: Art
 
             Exception in thread "main" java.lang.RuntimeException: You class name is not a valid class name.

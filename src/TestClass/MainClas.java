@@ -19,7 +19,7 @@ public class MainClas {
 
 
         /*
-        Run the main class
+        Run the MainClass
 
         Result should be Exception in thread "main" java.lang.AssertionError: Location should be one of the following [USA, England, France, Germany, Canada]
 

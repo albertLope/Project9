@@ -3,14 +3,14 @@ package Lessons;
 
 public class LessonClass {
 
-    /*
+   /*
         LessonClass class is abstract class
 
-        Create a 2 private variables
+        Create 2 private variables
         static int totalCreditCount
-        LinkedHashMap Key is String values is String name is classNameAndScore
+        LinkedHashMap Key is String, value is Integer, name is classNameAndScore
 
-        one private Student class object.
+        one private StudentClass object.
 
      */
 
@@ -23,34 +23,39 @@ public class LessonClass {
 
      */
 
-    /*
-    Create a constructor for the StudentClass
+     /*
+    Create a constructor for the LessonClass
+    parameter is StudentClass object
 
-    make StudentClass instance variable equal to student class parameter
+    make StudentClass instance variable equal to StudentClass parameter
 
-    call the setCreditCount method
+    call the setCreditCount method  which you are expected to create below
      */
 
-
-    /*
+   /*
 
     Create a method name setCreditCount
-    No parameter no return type
+    No parameter and no return type
+    Create an arraylist name is lessonsName
 
     Ask to user "Which class you would like to take your options are here : Math , Science , Biology , Chemistry , Music"
-    print the current totalCreditCount
+    Also  print the current totalCreditCount(this comes from the instance variable)
 
-    If the user took the Math class in first option and the user would like to take it again
+
+    If the user took the class (you wrote in the console with the scanner class) is already exits in the arraylist and the user would like to take it again
+
     Then print "You already took this class please choose other class"
 
-    If the user didnt take that class before then add it in the arraylist
+    If the user didn't take that class before then add it to the arraylist, and add the credit of the class(which comes from the lessonsName list) to the
+    totalCreditCount(you need to use checkCredit method)
 
-    NOTE: until the totalCreditCount become more then 7 user need to add the class
+    NOTE: The user can add a class until totalCreditCount equals to 7 (it is better to use while loop)
+
 
 
      */
 
-    /*
+     /*
     Create a method name is checkCredit
     parameter is one String lessonName
     return type is int
@@ -71,10 +76,11 @@ public class LessonClass {
      credit should be 3
 
      if the class is non of these options
-        Throw an error "You class name is not a valid class name."
+        Throw an exception "You class name is not a valid class name."
 
+    After the if statement
      put lessonName as a key in the classNameAndScore
-     value should take from the next method
+     value should take from the next method which is RandomNum
      */
 
 
